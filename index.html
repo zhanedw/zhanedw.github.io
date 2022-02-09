@@ -3,9 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Project: Map webpage</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+    
+    <style media="screen">
+      /* Add space between Vega-Embed links  */
+      .vega-actions a {
+        margin-right: 5px;
+      }
+    </style>
   </head>
   <body>
     <h1>Canada Map Page</h1>
     <p>... you will see Canada Map with some data</p>
+    <!-- <h1>Hello world</h1> -->
+    <div id="map"></div>
+<!--     <div id="map-only"></div> -->
+
+    <script src="script.js"></script>
+    <script>
+      // Embed the visualization in the container with id `vis`
+      vegaEmbed('#map', mapSpec);
+//       vegaEmbed('#map-only', canMapSpec);
+    </script>
   </body>
 </html>
