@@ -31,7 +31,7 @@ var map2Spec = {
     }
   },
   "projection": {
-    "type": "albersUsa"
+    "type": "albers"
   },
   "mark": {
     "type": "geoshape",
