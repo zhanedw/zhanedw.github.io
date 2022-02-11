@@ -31,7 +31,7 @@ var map2Spec = {
     }
   },
   "projection": {
-    "type": "albers"
+    "type": "conicEqualArea"
   },
   "mark": {
     "type": "geoshape",
