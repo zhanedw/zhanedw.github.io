@@ -31,7 +31,8 @@ var map2Spec = {
     }
   },
   "projection": {
-    "type": "conicEqualArea"
+   "type": "identity",
+    "reflectY": true
   },
   "mark": {
     "type": "geoshape",
